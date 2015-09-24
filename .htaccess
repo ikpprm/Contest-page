@@ -1,0 +1,8 @@
+#RewriteEngine on
+#RewriteCond %{HTTP_HOST} ^localhost/ [NC,OR]
+#RewriteCond %{HTTP_HOST} ^http://localhost/ [NC]
+#RewriteRule ^(.*)$ http://localhost/$1 
+
+RewriteEngine On
+#RewriteRule ^([a-zA-Z0-9]+)$ http://localhost/RC/index.php?page=$1
+RewriteRule ^([a-zA-Z0-9]+)$ http://whackedout.in/rameshi/RC/index.php?page=$1
